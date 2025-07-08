@@ -5,6 +5,7 @@
   "description": "Computes geomagnetic field information",
   "main": "index.js",
   "scripts": {
+	"build": "rollup -c",
     "test": "mocha test",
     "test-ci": "mocha -R tap"
   },
@@ -22,6 +23,9 @@
     "wmm"
   ],
   "devDependencies": {
+	"@rollup/plugin-json": "^6.1.0",
+	"@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
     "mocha": "~5.x",
     "chai": "~4.2.0"
   },
